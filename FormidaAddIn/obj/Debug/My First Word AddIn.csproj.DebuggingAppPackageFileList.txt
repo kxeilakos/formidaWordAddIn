@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\My First Word AddInManifest.xml
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Debug\My First Word AddIn.debugapp

@@ -1,0 +1,8 @@
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\Assignments.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\CollectionLabels.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\Engelska (engelska).json
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\Groups.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\GroupsStudents.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\Students.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Release\My First Word AddIn.dll.config
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\obj\Release\My First Word AddIn.csproj.CoreCompileInputs.cache

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="My First Word AddIn"
+     ProductID="{db0d9d22-ce44-4a9e-b25a-98731f1db2b2}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>My First Word AddIn</Title>
+    <StartPage>~appWebUrl/_layouts/15/WopiFrame.aspx?sourcedoc=~appWebUrl%2FOfficeDocuments%2FDocument1.docx&amp;action=edit</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="*" />
+  </AppPrincipal>
+</App>

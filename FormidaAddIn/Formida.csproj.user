@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <GeneratedFeatureId>0af13ddb-8d46-4d82-87a2-61610ea313da</GeneratedFeatureId>
+    <GeneratedPackageId>8f40b798-de42-4b73-b6dd-ac2209a4b5f9</GeneratedPackageId>
+    <GeneratedModuleId>{cbcfb7d2-1026-44ba-b1e6-edeb883381ee}</GeneratedModuleId>
+    <GeneratedListId>{2799c404-1c9b-4153-862e-84052fdffc03}</GeneratedListId>
+    <GeneratedProductId>{db0d9d22-ce44-4a9e-b25a-98731f1db2b2}</GeneratedProductId>
+    <GeneratedAppVersion>1.0.0.0</GeneratedAppVersion>
+    <GeneratedClientSecret>LeZVXIsU4Zb5fiYehlMTPhcqgAd/722UyOSqeJyIxLw=</GeneratedClientSecret>
+    <OfficeAndSharePointStartAction>OfficeDesktopClient</OfficeAndSharePointStartAction>
+    <SharePointSiteUrl>http://127.0.0.1:5621/</SharePointSiteUrl>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,16 @@
+86;Engelska (engelska);
+130;Engelska (svenska);
+133;Engelska grundskola;
+125;Franska;
+127;Laborationsraport Beta;
+123;Mina kommentarer;
+87;Spanska (spanska);
+88;Spanska (svenska);
+135;Spanska (svenska) grundskola;
+132;Spanska grundskola;
+82;Svenska;
+134;Svenska grundskola;
+92;Svenska som andrasprak;
+96;Tyska (svenska);
+90;Tyska (tyska);
+131;Tyska grundskola;
