@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>Word Add-In with Commands Sample</title>
+
+	<script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="Scripts/Jquery.Dropdown.js" type="text/javascript"></script>
+	<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-dropdown/2.0.3/jquery.dropdown.min.css" />
+	<!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+	<!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+	<!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+	<link href="Home.css" rel="stylesheet" type="text/css" />
+	<script src="Home.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.min.css">
+	<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.components.min.css">
+	<script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
+	<!-- To enable the offline use of Office UI Fabric, use: -->
+	<!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+	<!-- link rel="stylesheet" href="Content/fabric.components.min.css" -->
+</head>
+<body>
+	<div id="overlay"></div>
+	<div id="spinner"></div>
+
+	<div id="content-main fullWidth">
+		<div class="padding">
+			<div id="dropwDowns">
+				<div class="ms-Grid-row fullWidth">
+					<div class="ms-Grid-col ms-u-sm8 ms-u-md8 ms-u-lg8">
+						<img src="Images/formidaLogo.png" class="formiadaLogoFormat" />
+					</div>
+					<div class="ms-Grid-col ms-u-sm4 ms-u-md4 ms-u-lg4 container">
+						<i id="logoutControl" class="ms-Icon ms-Icon--ChevronRight logoutButtonFormat" title="Log Out" aria-hidden="true"></i>
+					</div>
+				</div>
+				<br />
+				<div class="ms-Grid-row fullWidth fullWidth">
+					<div class="ms-Grid-col ms-u-sm6 ms-u-md6 ms-u-lg6">
+						<div class="ms-Dropdown groups" tabindex="0">
+							<label class="ms-Label">Groups</label>
+							<i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+							<select id="groups-file" class="ms-Dropdown-select"></select>
+						</div>
+					</div>
+					<div class="ms-Grid-col ms-u-sm6 ms-u-md6 ms-u-lg6">
+						<div class="ms-Dropdown students" tabindex="0">
+							<label class="ms-Label">Students</label>
+							<i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+							<select id="students-file" class="ms-Dropdown-select"></select>
+						</div>
+					</div>
+				</div>
+				<div class="ms-Grid-row fullWidth">
+					<div class="ms-Grid-col ms-u-sm12 ms-u-md12 ms-u-lg12">
+						<div class="ms-Dropdown assignments" tabindex="0">
+							<label class="ms-Label">Assignments</label>
+							<i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+							<select id="assignments-file" class="ms-Dropdown-select"></select>
+						</div>
+					</div>
+				</div>
+				<div class="ms-Grid-row fullWidth">
+					<div class="ms-Grid-col ms-u-sm12 ms-u-md12 m s-u-lg12">
+						<div class="ms-Dropdown comments" tabindex="0">
+							<label class="ms-Label">Collections</label>
+							<i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+							<select id="collections-file" class="ms-Dropdown-select"></select>
+						</div>
+					</div>
+				</div>
+				<div class="ms-Grid-row fullWidth">
+					<div class="ms-Grid-col ms-u-sm12 ms-u-md12 m s-u-lg12">
+						<div class="ms-SearchBox fullWidth">
+							<div class="ms-SearchBox-iconContainer iconContainer" aria-hidden="true">
+								<i data-icon-name="Search" class="ms-SearchBox-icon ms-Icon icon-65" role="presentation" aria-hidden="true" style="position: absolute;"></i>
+							</div>
+							<input id="searchBox" class="ms-SearchBox-field searchBoxFormat" placeholder="Search" aria-label="Search" value="" style="width:100%">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ms-Grid-row fullWidth">
+				<div class="ms-Grid-col ms-u-sm12 ms-u-md12 m s-u-lg12 reduceVerticalSpace">
+					<div id="comments-area">
+
+					</div>
+
+				</div>
+			</div>
+			<br />
+			<div id="iconBar" class="iconBarBottom">
+				<div class="ms-Grid-row actionsPanelFormat" id="actions">
+					<div class="ms-Grid-col ms-u-sm2 ms-u-md2 m s-u-lg2 actionsDetailsFormat popup">
+						<span class="popuptext ms-Label actionsTooltipFormat">Angra kommentar</span>
+						<a href="https://api.formida.se/api/v3/clicks/" target="_parent">
+							<i id="deleteComments" class="ms-Icon ms-Icon--Undo actionsIconFormat" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="ms-Grid-col ms-u-sm2 ms-u-md2 m s-u-lg2 actionsDetailsFormat popup">
+						<span class="popuptext ms-Label actionsTooltipFormat">Hantera kommentater</span>
+						<a href="https://my.formida.se/ " target="_parent">
+							<i id="manageComments" class="ms-Icon ms-Icon--Chat actionsIconFormat" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="ms-Grid-col ms-u-sm2 ms-u-md2 m s-u-lg2 actionsDetailsFormat popup">
+						<span class="popuptext ms-Label actionsTooltipFormat">Visa Statistik</span>
+						<a href="https://my.formida.se/app/charts.html?#dashboard" target="_parent">
+							<i id="viewCommentStatistics" class="ms-Icon ms-Icon--Chart actionsIconFormat" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="ms-Grid-col ms-u-sm2 ms-u-md2 m s-u-lg2 actionsDetailsFormat popup">
+						<span class="popuptext ms-Label actionsTooltipFormat">Fyll i matris</span>
+						<a href="https://my.formida.se/app/charts.html?#matrix" target="_parent">
+							<i id="addNewComments" class="ms-Icon ms-Icon--Table actionsIconFormat" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="ms-Grid-col ms-u-sm2 ms-u-md2 m s-u-lg2 actionsDetailsFormat popup">
+						<span class="popuptext ms-Label actionsTooltipFormat">Hantera moment</span>
+						<a href="https://my.formida.se/app/charts.html?#assessments" target="_parent">
+							<i id="manageQuickComments" class="ms-Icon ms-Icon--PageSolid actionsIconFormat" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="ms-Grid-col ms-u-sm2 ms-u-md2 m s-u-lg2 actionsDetailsFormat popup">
+						<span class="popuptext ms-Label actionsTooltipFormat">Hantera Grupper</span>
+						<a href="https://my.formida.se/app/charts.html?#groups" target="_parent">
+							<i id="manageGroups" class="ms-Icon ms-Icon--Group actionsIconFormat" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

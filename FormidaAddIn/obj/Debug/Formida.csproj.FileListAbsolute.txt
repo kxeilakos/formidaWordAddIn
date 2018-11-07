@@ -1,0 +1,9 @@
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Debug\Assignments.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Debug\CollectionLabels.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Debug\Engelska (engelska).json
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Debug\Students.txt
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\bin\Debug\My First Word AddIn.dll.config
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\My First Word AddIn\obj\Debug\Formida.csproj.CoreCompileInputs.cache
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\FormidaAddIn\bin\Debug\My First Word AddIn.dll.config
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\FormidaAddIn\obj\Debug\Formida.csproj.CoreCompileInputs.cache
+C:\Users\user kentro 4\source\repos\Office App\My First Word AddIn\FormidaAddIn\obj\Debug\Formida.csprojAssemblyReference.cache

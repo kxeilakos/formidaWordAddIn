@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8f40b798-de42-4b73-b6dd-ac2209a4b5f9" solutionId="9bfafe2d-b0da-4e87-80cb-982aeb2d458c" resetWebServer="false" sharePointProductVersion="15.0" name="My First Word AddIn" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="0af13ddb-8d46-4d82-87a2-61610ea313da" />
+  </features>
+</package>
